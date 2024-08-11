@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- Navbar -->
+
+    <nav class="navbar">
+        <div class="navContainer">
+            <img src="img/logo.png" alt="Logo" class="logo">
+        </div>
+        <div class="navContainer">
+            <ul class="navLinks">
+                <a href="#home">Home</a>
+                <a href="#classes">Classes</a>
+                <a href="#trainer">Traniner</a>
+                <a href="#review">Review</a>
+                <a href="#contact">Contact</a>
+                <button class="btn joinButton">JOIN US</button>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Background Section -->
+    <section  id="home">
+        <div class="background">
+            <div class="content">
+                <h2 class="powerTitle">POWERFULL</h2>
+                <h1 class="groupTitle">Group <br> Practice <br> With Trainer</h1>
+                <div class="contentDiv">
+                    <p class="contentP">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi quibusdam nobis cumque odio ad esse, qui, accusantium neque aliquid alias libero provident saepe nemo. Nesciunt repellendus sit iure ut libero!</p>
+                </div>
+                <div class="buttons">
+                    <button class="btn btnSignup">Sign up</button>
+                    <button class="btn btnDetails">Details</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Course -->
+    <section id="classes">
+    <div class="course">
+        <div class="courseSection">
+            <h2>325</h2>
+            <p>Course</p>
+        </div>
+        
+        <div class="courseSection">
+            <h2>405</h2>
+            <p>Work Out</p>
+        </div>
+        
+        <div class="courseSection">
+            <h2>305</h2>
+            <p>Working Hour</p>
+        </div>
+        
+        <div class="courseSection"> 
+            <h2>705</h2>
+            <p>Happy Client</p>
+        </div>
+    </div>
+
+    <!-- Our Classes -->
+
+    <div class="line">
+        <div class="our-start">
+            <h2>OUR CLASSES</h2>
+            <div class="class-line"></div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum dicta ullam dolor neque voluptates sapiente at earum</p>
+        </div>
+
+        <div class="class-buttons">
+            <button id="yoga">Yoga</button>
+            <button id="group">Group</button>
+            <button id="solo">Solo</button>
+            <button id="stretching">Stretching</button>
+        </div>
+        
+        <div class="class-info">
+            <div id="yogaContent" class="class-text">
+                <div class="class-content">
+                    <div class="text-content">
+                        <h3>Why are your Yoga?</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur possimus voluptatem impedit odit perferendis dolorum placeat, exercitationem in officia autem maiores ab nostrum laboriosam sapiente nulla totam neque eum veniam.</p>
+                        <h4>When comes Yoga Your Time?</h4>
+                        <p>Saturday-Sunday: 8:00am - 10:00am<br>Monday-Tuesday: 10:00am - 12:00pm<br>Wednesday-Friday: 3:00pm - 6:00pm</p>
+                    </div>
+                    <div class="class-image">
+                        <img src="img/yoga.jpg" alt="Yoga">
+                    </div>
+                </div>
+            </div>
+
+            <div id="groupContent" class="class-text" style="display:none;">
+                <div class="class-content">
+                    <div class="text-content">
+                        <h3>Group Sessions</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Group sessions are great for community building.</p>
+                        <h4>Group Schedule</h4>
+                        <p>Saturday-Sunday: 10:00am - 12:00pm<br>Monday-Wednesday: 2:00pm - 4:00pm</p>
+                    </div>
+                    <div class="class-image">
+                        <img src="img/group.webp" alt="Yoga">
+                    </div>
+                </div>
+            </div>
+
+            <div id="soloContent" class="class-text" style="display:none;">
+                <div class="class-content">
+                    <div class="text-content">
+                        <h3>Solo Sessions</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Solo sessions provide a personalized experience.</p>
+                        <h4>Solo Schedule</h4>
+                        <p>Friday: 1:00pm - 3:00pm<br>Thursday: 5:00pm - 7:00pm</p>
+                    </div>
+                    <div class="class-image">
+                        <img src="img/group.webp" alt="Yoga">
+                    </div>
+                </div>
+            </div>
+            <div id="stretchingContent" class="class-text" style="display:none;">
+                <div class="class-content">
+                    <div class="text-content">
+                        <h3>Stretching Exercises</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Stretching helps improve flexibility and reduce injury risks.</p>
+                        <h4>Stretching Schedule</h4>
+                        <p>Monday-Friday: 6:00am - 7:00am<br>Saturday: 7:00am - 8:00am</p>
+                    </div>
+                    <div class="class-image">
+                        <img src="img/stret.webp" alt="Yoga">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        <!-- BMI -->
+
+    <div class="bmi-calculator">
+        <div class="bmi-form">
+            <h2>BMI Calculator</h2>
+            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. <br><br></p>
+            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+            <div class="bmi-input">
+                <input type="number" id="height" placeholder="Your Height" min="0" /> cm
+                <input type="number" id="weight" placeholder="Your Weight" min="0" /> kg
+            </div>
+            <button onclick="calculateBMI()" id="trainer">Calculate</button>
+        </div>
+        <div class="bmi-result">
+            <h3>Your BMI</h3>
+            <div class="bmi-indicator">
+                <img src="img/bmi-index.jpg" alt="BMI Indicator">
+                <div id="bmi-arrow" class="bmi-arrow"></div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <!-- Trainers -->
+
+    <div class="trainers-bg">
+        <div class="trainers-container">
+            <h2>OUR BEST TRAINERS</h2>
+            <div class="class-line"></div>
+            <p>Meet our expert trainers ready to help you achieve your fitness goals.</p>
+
+            <div class="trainer">
+                <div class="trainers-img">
+                    <div class="trainers-imgtop"> 
+                        <img src="img/trainer1.jpg" alt="Trainer 1">
+                    </div>
+                </div>
+                <div class="trainer-info">Jane Doe<br>Cardio Trainer</div>
+            </div>
+
+            <div class="trainer">
+                <div class="trainers-img">
+                        <div class="trainers-imgtop">
+                            <img src="img/trainer2.jpg" alt="Trainer 2">
+                        </div>
+                </div>
+                <div class="trainer-info">Jane Doe<br>Cardio Trainer</div>
+            </div>
+
+            <div class="trainer">
+                <div class="trainers-img">
+                    <div class="trainers-imgtop">
+                        <img src="img/trainer3.jpg" alt="Trainer 2">
+                    </div>
+            </div>
+                <div class="trainer-info">Jane Doe<br>Cardio Trainer</div>
+            </div>
+
+        </div>
+    </div>
+
+        <!-- PURCHASE -->
+
+        <h2 class="purch-h2">PURCHASE FROM US</h2>
+        <div class="class-line"></div>
+        <p class="purch-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem adipisci dignissimos veniam facere totam veritatis voluptatum.</p>
+        <div class="cards-container">
+            <div class="card">
+                <img src="img/purchase1.jpg" alt="Kettlebell 5kg">
+                <div class="card-content">
+                    <h3>Kettlebell / 5kg</h3>
+                    <p><span>89,99$</span> / 59,99$</p>
+                    <a href="#"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/purchase2.jpg" alt="Treadmill">
+                <div class="card-content">
+                    <h3>Treadmill</h3>
+                    <p><span>899,99</span>$ / 599,99$</p>
+                    <a href="#"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/purchase3.jpg" alt="Adjustable Dumbbell">
+                <div class="card-content">
+                    <h3>Adjustable Dumbbell</h3>
+                    <p><span>89,99$</span> / 59,99$</p>
+                    <a href="#"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/purchase4.jpg" alt="Kettlebell 3kg">
+                <div class="card-content">
+                    <h3>Kettlebell / 3kg</h3>
+                    <p><span>89,99$</span> / 59,99$</p>
+                    <a href="#"><i class="fa-solid fa-cart-shopping" id="review"></i> Add To Cart</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Review section -->
+     
+    <div class="review">
+
+        <div class="review-section">
+            <h2>REVIEW CLIENT</h2>
+            <div class="class-line"></div>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis maiores veritatis, atque animi nobis quae vitae modi beatae repudiandae in, optio quos illo dolores voluptatem! 
+            </p>
+        </div>
+  
+        <div class="section">
+            <div class="section-main ">
+                <div class="review-name">
+                    <img src="img/client1.jpg" alt="section 1">
+                    <div class="section-info">
+                        <h4>Diet Expert</h4>
+                        <p>CFO</p>
+                    </div>
+                </div>
+  
+                <div class="comment">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga expedita officia tempore impedit ab, obcaecati velit, optio neque odit ea repellat asperiores sed mollitia, ipsum quam possimus. Voluptate, sit itaque.
+                    </p>
+                    </p>
+                </div>
+  
+            </div>
+            <div class="section-main">
+                <div class="review-name">
+                    <img src="img/client2.jpg" alt="section 2">
+                    <div class="section-info">
+                        <h4>Cardio Trainer</h4>
+                        <p>CEO</p>
+                    </div>
+                </div>
+                <div class="comment">
+                    <p id="contact">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga expedita officia tempore impedit ab, obcaecati velit, optio neque odit ea repellat asperiores sed mollitia, ipsum quam possimus. Voluptate, sit itaque.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Us -->
+     
+    <div class="contact" id="contact">
+        <div class="contact-section">
+            <h2>CONTACT US</h2>
+            <div class="class-line"></div>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis maiores veritatis, atque animi nobis quae vitae modi beatae repudiandae in, optio quos illo dolores voluptatem! 
+            </p>
+        </div>
+        <div class="contact-menu">
+            <div class="contact-area">
+  
+                <div class="contact-info">
+                    <div class="phone-info">
+                        <h3>Mobile Number</h3>
+                        <p>+135 773 321 4442</p>
+                    </div>
+                    <div class="email-info">
+                        <h3>Email Address</h3>
+                        <p>demo@demo.com</p>
+                    </div>
+                </div>
+  
+                <div class="form">
+                    <h3>Make An Appointment</h3>
+                    <input type="text" id="yourName" name="yourName" placeholder="Your Name" required>
+                    <input type="email" id="yourEmail" name="yourEmail" placeholder="Your Email" required>
+                    <textarea id="message" name="message" placeholder="Your Message" rows="4"
+                        required></textarea>
+                </div>
+            </div>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3006.850219453748!2d28.945474276531975!3d41.094119114134074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caa552b74cf60b%3A0xbb5ec0dc0692ace7!2zxLBzdGFuYnVsIDExMiBBY2lsIMOHYcSfcsSxIE1lcmtlemkgTcO8ZMO8cmzDvMSfw7w!5e0!3m2!1str!2str!4v1723363563923!5m2!1str!2str" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  
+            </div>
+        </div>
+    </div>
+
+
+    <!-- footer -->
+     
+    <footer>
+        <div class="top-footer">
+            <img src="img/logo.png" alt="Logo">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis maiores veritatis, atque animi nobis quae vitae modi beatae repudiandae in, optio quos illo dolores voluptatem! 
+            </p>
+        </div>
+        <div class="bottom-footer">
+            <div class="left-side">
+                <h3>Information</h3>
+                <a href="#">About Us</a>
+                <a href="#">Classes</a>
+                <a href="#">Blog</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="right-side">
+                <h3>Helpful Links</h3>
+                <a href="#">Services</a>
+                <a href="#">Supports</a>
+                <a href="#">Terms & Condition</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+        </div>
+      </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
