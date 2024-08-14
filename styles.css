@@ -987,106 +987,161 @@ footer {
 
   /* 576px */
 
-  @media only screen and (max-width: 576px) {
+  @media screen and (max-width: 576px) {
+    /* Genel Ayarlar */
+    body, html {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    .container, .navbar, .background, .course, .bmi-calculator, .class-info, .trainers-container, .cards-container, .review-section, .contact-menu, footer {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
     /* Navbar */
     .navbar .navContainer {
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        justify-content: space-around;
+        flex-direction: row;
+        text-align: center;
+        width: 100%;
     }
 
     .navbar .navLinks {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        gap: 5px;
+        padding: 0;
         align-items: center;
     }
 
     .navbar .navLinks a {
-        padding: 10px 0;
+        display: block;
+        margin: 10px 0;
+        width: 100%;
     }
 
-    .navbar .joinButton {
-        margin-top: 10px;
+    .navbar button {
+        max-width: 33vh;
+        max-height: 33vh;
     }
 
     /* Background Section */
     .background .content {
+        padding: 10px;
         text-align: center;
-    }
-
-    .background .content .groupTitle {
-        font-size: 2rem;
-    }
-
-    .background .contentDiv {
-        padding: 0 10px;
-    }
-
-    .buttons .btn {
         width: 100%;
-        margin: 5px 0;
+    }
+
+    .background .content h2, 
+    .background .content h1 {
+        font-size: 24px;
+    }
+
+    .background .contentP {
+        font-size: 14px;
+    }
+
+    .buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .buttons .btnSignup, 
+    .buttons .btnDetails {
+        width: 100%;
+        margin: 10px 0;
     }
 
     /* Course Section */
     .course {
         flex-direction: column;
         align-items: center;
+        width: 100%;
     }
 
     .courseSection {
-        margin-bottom: 20px;
-    }
-
-    /* Our Classes Section */
-    .our-start h2 {
+        margin-bottom: 15px;
         text-align: center;
-    }
-
-    .class-info .class-content {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .class-info .text-content {
-        text-align: center;
-    }
-
-    .class-info .class-image img {
-        max-width: 100%;
-        height: auto;
+        margin-top: 15px;
     }
 
     /* BMI Calculator */
     .bmi-calculator {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .bmi-form,
-    .bmi-result {
-        width: 100%;
+        display: block;
         text-align: center;
-        margin-bottom: 20px;
+        width: 100%;
+        margin: auto;
     }
 
-    .bmi-input input {
-        width: calc(100% - 20px);
-        margin: 5px 0;
+    .bmi-form, .bmi-result {
+        width: 50%;
+        margin: auto;
     }
 
-    /* Trainers Section */
+    .bmi-result img {
+        width: 100%;
+        margin: auto;
+    }
+
+    /* Our Classes */
+    .class-info .class-content {
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        margin: auto;
+    }
+
+    .class-buttons {
+        flex-direction: column;
+        text-align: center;
+        width: 50%;
+        margin: auto;
+        margin-bottom: 16px;
+    }
+
+    .class-info .class-content .class-image {
+        text-align: center;
+        width: 100%;
+        margin: auto;
+    }
+
+    /* Trainers */
     .trainers-container {
         text-align: center;
+        width: 100%;
+        margin-top: 24px;
     }
 
     .trainer {
-        margin-bottom: 20px;
+        display: block;
+        width: 100%;
+        margin: 24px auto;
+    }
+
+    .trainers-img::after {
+        margin: 0 90px;
+    }
+
+    .trainers-img::before {
+        margin: 0 90px;
+    }
+
+    .trainers-imgtop::before {
+        left: 14%;
+        right: 14%;
+        width: 150px;
+        margin: 0 50% 0 20%;
+
     }
 
     /* Purchase Section */
     .cards-container {
         flex-direction: column;
         align-items: center;
+        width: 100%;
     }
 
     .card {
@@ -1095,53 +1150,46 @@ footer {
     }
 
     /* Review Section */
-    .review-section h2 {
+    .review-section {
         text-align: center;
+        width: 100%;
     }
 
-    .section-main {
+    .review-name {
         flex-direction: column;
         align-items: center;
-        text-align: center;
+        width: 100%;
     }
 
     .comment {
-        padding: 0 10px;
+        text-align: center;
+        width: 100%;
     }
 
     /* Contact Section */
-    .contact-area,
-    .map {
+    .contact-menu {
+        flex-direction: column;
+        align-items: center;
         width: 100%;
-        text-align: center;
     }
 
-    .contact-info {
+    .contact-area, .map {
+        width: 100%;
         margin-bottom: 20px;
-    }
-
-    .form input,
-    .form textarea {
-        width: 100%;
-        margin-bottom: 10px;
     }
 
     /* Footer */
-    .top-footer,
-    .bottom-footer {
+    footer .top-footer, footer .bottom-footer {
         text-align: center;
-        flex-direction: column;
-        align-items: center;
+        width: 100%;
+        margin: auto;
     }
 
-    .bottom-footer .left-side,
-    .bottom-footer .right-side {
+    footer .bottom-footer .left-side, footer .bottom-footer .right-side {
         margin-bottom: 20px;
+        width: 100%;
     }
-
-    .bottom-footer .left-side a,
-    .bottom-footer .right-side a {
-        display: block;
-        margin-bottom: 10px;
+    .top-footer img {
+        margin: auto;
     }
 }
